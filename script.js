@@ -10,7 +10,7 @@ var formatdate= moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
     
       row = $('<div class="row">')
       col1 = $(`<div class ="col-lg-2 hr btn btn-success">${AmPmshow(i)}</div>`)
-      col2 = $(`<div class ="col-lg-8 inputcontent"><input data-input="${i}" id="inputText${i}" class="form-control inputText" type="text" name="userInput"></div>`)
+      col2 = $(`<div class ="col-lg-8 inputcontent"><input data-input="${i}" id="inputText${i}" class="form-control inputtext1" type="text" name="userInput"></div>`)
       col3 = $(`<div class ="col-lg-2"><button data-id="${i}" id="savePlanner" class="btn btn-info"><i class="bi bi-plus-circle"></i> ADD NOTE</button></div>`)
       row.append(col1)
       row.append(col2)
@@ -20,8 +20,8 @@ var formatdate= moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
     }
    $("button.btn.btn-info").click(function(){
    var input = $(this).data("id")
-   var inputText = $(this).parent().siblings().find("input").val()
-   localStorage.setItem(input,inputText)
+   var inputtext1 = $(this).parent().siblings().find("input").val()
+   localStorage.setItem(input,inputtext1)
    })
  
    function AmPmshow(hr){
@@ -38,10 +38,10 @@ var formatdate= moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
   });
 
    function getlocalStorage(hr2){
-     let inputval = localStorage.getItem(hr2)
+     let inputvalue = localStorage.getItem(hr2)
      if(true){
       
-      var text= $(`input#inputText${hr2}`).val(inputval)
+      var text= $(`input#inputtext1${hr2}`).val(inputvalue)
       console.log(text)
      }
    }
@@ -51,10 +51,10 @@ var formatdate= moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
      for (var i= 1 ; i<=24; i++){
        console.log(hourtime,i)
        if(hourtime==i ) {
-        $(`#inputText${i}`).css("background","purple")
+        $(`#inputtext1${i}`).css("background","purple")
        }else  if(hourtime<i ){
         
-         $(`#inputText${i}`).css("background","#009B93")
+         $(`#inputtext1${i}`).css("background","#009B93")
 
        }
      }
