@@ -11,12 +11,15 @@
     
 
 }
+.jumbotron {
 
-
-
-.body{
-    background: red;
+    background-color: rgb(112, 185, 157);
+    color : white;
 }
+
+
+
+
 .btn{
     height: 80px;
 }
@@ -47,3 +50,4 @@
     font-size: 60px;
 
 }
+
