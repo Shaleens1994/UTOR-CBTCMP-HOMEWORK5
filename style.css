@@ -1,0 +1,49 @@
+.inputText{
+    background: #eee;
+    height: 80px;
+    border: none;
+    border-radius: 0;
+    border-left: rgba(17, 119, 167, 0.467);
+    
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+    font-size: larger;
+    
+
+}
+
+
+
+.body{
+    background: red;
+}
+.btn{
+    height: 80px;
+}
+.row{
+    margin-bottom: 2px;
+}
+.hr{
+    border-top: 1px dotted rgb(19, 156, 235);
+    padding-top: 30px;
+}
+.inputcontent{
+    margin-left: -40px;
+    margin-right: -60px;
+    
+}
+
+
+.container {
+    color: rgb(16, 147, 151);
+    font-weight: bold;
+    font-size: large;
+
+}
+
+
+.display-4 {
+    font-weight: bold;
+    font-size: 60px;
+
+}
