@@ -9,7 +9,7 @@ var formatdate= moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
     for (var i= 1 ; i<=24; i++){
     
       row = $('<div class="row">')
-      col1 = $(`<div class ="col-lg-2 hr btn btn-secondary">${AmPmshow(i)}</div>`)
+      col1 = $(`<div class ="col-lg-2 hr btn btn-success">${AmPmshow(i)}</div>`)
       col2 = $(`<div class ="col-lg-8 inputcontent"><input data-input="${i}" id="inputText${i}" class="form-control inputText" type="text" name="userInput"></div>`)
       col3 = $(`<div class ="col-lg-2"><button data-id="${i}" id="savePlanner" class="btn btn-info"><i class="bi bi-plus-circle"></i> ADD NOTE</button></div>`)
       row.append(col1)
